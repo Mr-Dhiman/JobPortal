@@ -13,11 +13,11 @@ app.use(express.urlencoded({ extended: true })); // parse request content-type:f
 
 
 
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-  });
+// app.use(function(req, res, next) {
+//     res.header("Access-Control-Allow-Origin", "*"); 
+//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//     next();
+//   });
 mongoose.Promise = global.Promise;
 
 app.use('/', login_router);
@@ -29,7 +29,7 @@ mongoose.connect(db.url, {
 }).catch(err => {
     console.log("connection Failed", err);
 })
-// app.use(express.static("Hoitalent"));
+app.use(express.static("Hoitalent"));
 
 
 const port = process.env.PORT || 8082;
