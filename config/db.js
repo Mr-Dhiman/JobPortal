@@ -1,4 +1,4 @@
 module.exports={
-    url:'mongodb://127.0.0.1:27017/Hoitalent',
+    url:'mongodb+srv://MrDhiman:<Mr.Dhiman1!>@hoitalent.czdsw.mongodb.net/Hoitalent?retryWrites=true&w=majority',
     secret: "this-is-secretkey"
 }
