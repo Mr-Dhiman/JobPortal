@@ -2,7 +2,7 @@
     "name": "Hoitalent",
     "version": "1.0.0",
     "description": "",
-    "main": "app.js",
+    "main": "functions/app.js",
   "scripts": {
     "build": "netlify-lambda build express",
     "start": "nodemon server-local.js"
