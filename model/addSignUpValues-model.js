@@ -17,4 +17,4 @@ const add_user = mongoose.Schema({
     updated_at: { type: Date,},
 })
 
-module.exports = mongoose.model("Auth", add_user);
+module.exports = mongoose.model("auths", add_user);
