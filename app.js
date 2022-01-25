@@ -34,7 +34,7 @@ mongoose
   });
 app.use(express.static("Hoitalent"));
 
-const port = process.env.PORT || 8082;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log("server is listening at port", port);
