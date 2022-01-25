@@ -1,11 +1,13 @@
 {
-  "name": "Job Portal",
+  "name": "job-portal",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
+  "keywords": [],
+  "author": "",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
